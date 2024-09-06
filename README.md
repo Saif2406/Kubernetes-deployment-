@@ -57,5 +57,5 @@
 
  **Kubectl**: Command-line utility to interact with the Kubernetes API server.
 
- **Kube****-****proxy**: Network proxy which contains all the network rules on each node in the cluster.
+ **Kubeproxy**: Network proxy which contains all the network rules on each node in the cluster.
 
