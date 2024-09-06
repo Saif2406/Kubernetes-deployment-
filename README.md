@@ -1,8 +1,8 @@
-# Kubernetes-deployment-
+Kubernetes-Deployment
 
 Kubernetes is a popular container orchestration tool
 
-#Features:
+Features:
 → Load balancing
 → Self-healing
 → High availability/ensure no downtime/maintain fault tolerance
@@ -11,7 +11,7 @@ Kubernetes is a popular container orchestration tool
 
 ![image](https://github.com/user-attachments/assets/3721071c-cf71-42bf-b17a-d12ed7e66c88)
 
-#Kubernetes follows master-slave architecture. Kubernetes architecture has a master node and worker nodes
+Kubernetes follows master-slave architecture. Kubernetes architecture has a master node and worker nodes
 
 There are four components of a master node:
 → Kube API server
@@ -24,13 +24,14 @@ There are three components of worker node:
 → kube-proxy
 → container runtime
 
-#Kubernetes Terminologies :
+
+Kubernetes Terminologies:
 
  Pod: It represents one or more containers running in a cluster.
 
  Service: An abstract way to access pod/application.
 
- Namespace: It is used to remove name collision within a cluster. It supports multiple virtual clusters on the same physical cluster.
+ Namespace: It is used to remove name collision within a cluster. It supports multiple virtual clusters on      the same physical cluster.
 
  Node: Kubernetes worker machine.
 
