@@ -1,0 +1,143 @@
+Basic Cluster Information
+
+1)Get cluster info:
+
+kubectl cluster-info
+
+2)Get nodes in the cluster:
+
+kubectl get nodes
+
+3)Describe a specific node:
+
+kubectl describe node <node-name>
+
+Pods Management
+
+1)List all pods in the default namespace:
+
+kubectl get pods
+
+2)List all pods in all namespaces:
+
+kubectl get pods --all-namespaces
+
+3)Describe a specific pod:
+
+kubectl describe pod <pod-name>
+
+4)Get logs of a pod:
+
+kubectl logs <pod-name>
+
+5)Execute a command in a running pod:
+
+kubectl exec -it <pod-name> -- <command>
+
+6)Deployments Management
+List deployments:
+
+kubectl get deployments
+
+1)Scale a deployment:
+
+kubectl scale deployment <deployment-name> --replicas=<number>
+
+2)Rollout history of a deployment:
+
+kubectl rollout history deployment <deployment-name>
+
+3)Rollback a deployment:
+
+kubectl rollout undo deployment <deployment-name>
+
+Services and Networking
+
+1)List services:
+
+kubectl get svc
+
+2)Describe a service:
+
+kubectl describe svc <service-name>
+
+3)Get endpoints for a service:
+
+kubectl get endpoints <service-name>
+
+Namespaces
+
+1)List namespaces:
+
+kubectl get namespaces
+
+2)Switch namespace:
+
+kubectl config set-context --current --namespace=<namespace>
+
+3)Create a new namespace:
+
+kubectl create namespace <namespace-name>
+
+ConfigMaps and Secrets
+1)List ConfigMaps:
+
+kubectl get configmaps
+
+2)Describe a ConfigMap:
+
+kubectl describe configmap <configmap-name>
+
+3)List Secrets:
+
+kubectl get secrets
+
+4)Describe a Secret:
+
+kubectl describe secret <secret-name>
+
+Resource Creation and Deletion
+
+1)Apply a resource from a YAML file:
+
+kubectl apply -f <file-name>.yaml
+
+2)Delete a resource from a YAML file:
+
+kubectl delete -f <file-name>.yaml
+
+3)Delete a specific resource by name:
+
+kubectl delete <resource-type> <resource-name>
+
+Debugging
+
+1)Get events in the cluster:
+
+kubectl get events
+
+2)Debug a pod using a shell:
+
+kubectl exec -it <pod-name> -- /bin/bash
+
+3)Check logs for a specific container in a pod:
+
+kubectl logs <pod-name> -c <container-name>
+
+Persistent Volumes (PV) and Persistent Volume Claims (PVC)
+
+1)List persistent volumes:
+
+kubectl get pv
+
+2)List persistent volume claims:
+
+kubectl get pvc
+
+
+Resource Utilization
+
+1)View resource usage (requires Metrics Server):
+
+kubectl top nodes
+kubectl top pods
